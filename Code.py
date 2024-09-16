@@ -10,7 +10,7 @@ def generate_sequence(length):
     return ''.join(random.choice(amino_acids) for _ in range(length))
 
 # Create a FASTA file
-with open("amino_acid_sequences.fasta", "w") as fasta_file:
+with open("SNP.fasta", "w") as fasta_file:
     # Generate 20 sequences
     for i in range(1, 21):
         # Sequence name Prt1, Prt2, ..., Prt20
