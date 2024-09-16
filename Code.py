@@ -15,7 +15,7 @@ with open("SNP.fasta", "w") as fasta_file:
     for i in range(1, 21):
         # Sequence name Prt1, Prt2, ..., Prt20
         fasta_file.write(f">Prt{i}\n")
-        # Generate a random sequence of length 50
+        # Generate a random sequence of length 200
         sequence = generate_sequence(200)
         fasta_file.write(sequence + "\n")
 
